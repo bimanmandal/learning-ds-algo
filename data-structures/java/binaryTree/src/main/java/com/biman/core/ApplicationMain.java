@@ -1,5 +1,7 @@
 package com.biman.core;
 
+import com.github.afkbrb.btp.BTPrinter;
+
 import java.util.*;
 
 public class ApplicationMain {
@@ -22,7 +24,10 @@ public class ApplicationMain {
     f.left = g;
     g.right = h;
 
-//    breadthFirstTraversal(a);
+    System.out.println(TreePrinter.getTreeDisplay(a));
+//    BTPrinter.printRandomBST(100, 100);
+
+    breadthFirstTraversal(a);
     depthFirstTraversal(a);
   }
 
